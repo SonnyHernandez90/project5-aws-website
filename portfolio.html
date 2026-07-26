@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonny Hernandez | Portfolio</title>
+
+    <link id="site-style" rel="stylesheet" href="css/style-a.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-brand" href="index.html">Sonny Hernandez</a>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html" aria-current="page">Portfolio</a>
+                <a href="qualifications.html">Qualifications</a>
+                <a href="service.html">Service</a>
+                
+            </nav>
+
+            <button id="styleToggle" type="button" class="style-toggle">
+                Toggle Style
+            </button>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="hero" aria-label="Portfolio introduction">
+            <h1 class="hero-title">Portfolio</h1>
+            <p id="portfolioIntro" class="hero-subtitle">
+                Here are a few projects that represent how I build: resource aware embedded systems,
+                reliable networking, and practical ML pipelines.
+            </p>
+           
+        </section>
+
+        <section aria-label="Featured projects">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="card-grid">
+                
+                <article class="card">
+                    <h3 class="card-title">Distributed ESP32 IoT Pager System</h3>
+
+                   
+                    <img
+                        src="assets/esp32-pager.png"
+                        alt="ESP32 pager project photo"
+                        style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 12px;"
+                    >
+
+                    <p class="card-text">
+                        I designed and implemented a resource constrained embedded pager using an ESP32
+                        (ESP IDF + FreeRTOS) to deliver real time notifications over WiFi. 
+                    </p>
+
+                    <p class="card-text">
+                        The system included a Raspberry Pi Flask server (Python) that was securely exposed using ngrok,
+                        plus ESP32 firmware for an OLED display (SSD1306), GPIO control, deep sleep power optimization,
+                        and battery operation. 
+                    </p>
+
+                    <ul class="link-list">
+                        <li>ESP32 firmware: WiFi notifications + OLED UI + buzzer alerts </li>
+                        <li>Power: deep sleep strategy for battery friendly operation </li>
+                        <li>Reliability: tested across power cycles + reconnects; debugged I2C/WiFi/RTOS issues </li>
+                        <li>Integration: alerts when CV model training completes </li>
+                    </ul>
+
+                    <p class="card-text">
+                        Links:
+                        <a href="https://www.espressif.com/en/products/sdks/esp-idf" target="_blank" rel="noopener noreferrer">ESP-IDF</a>,
+                        <a href="https://www.freertos.org/" target="_blank" rel="noopener noreferrer">FreeRTOS</a>,
+                        <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer">Flask</a>,
+                        <a href="https://ngrok.com/" target="_blank" rel="noopener noreferrer">ngrok</a>.
+                    </p>
+                </article>
+
+                
+                <article class="card">
+                    <h3 class="card-title">Automated Computer Vision System for Bolt Detection</h3>
+
+                    
+                    <img
+                        src="assets/bolt-detection.jpg"
+                        alt="Bolt detection project image"
+                        style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 12px;"
+                    >
+
+                    <p class="card-text">
+                        Built an automated ML pipeline to classify industrial fasteners using Python, TensorFlow,
+                        and OpenCV. Collected and labeled 5,000 images and trained multi class CNN models for
+                        real world environments. 
+                    </p>
+
+                    <ul class="link-list">
+                        <li>Pipeline: training, logging, benchmarking automation</li>
+                        <li>Focus: accuracy vs speed vs resource constraints for realtime use</li>
+                        <li>Deployment target: constrained embedded hardware (Jetson Orin) </li>
+                    </ul>
+
+                    <p class="card-text">
+                        Links:
+                        <a href="https://www.tensorflow.org/" target="_blank" rel="noopener noreferrer">TensorFlow</a>,
+                        <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer">OpenCV</a>,
+                        <a href="https://developer.nvidia.com/embedded-computing" target="_blank" rel="noopener noreferrer">NVIDIA Embedded</a>.
+                    </p>
+                </article>
+
+                <!-- FIGURES / Research Project -->
+                <article class="card">
+                    <h3 class="card-title">Detection of Nuts and Bolts in Complex Environments (Research)</h3>
+
+                    <p class="card-text">
+                        Contributed to a research effort focused on classification/detection of nuts and bolts.
+                        Built and preprocessed a custom dataset, and worked with object detection models including
+                        YOLOv8 and a custom TensorFlow pipeline. 
+                    </p>
+
+                    <ul class="link-list">
+                        <li>Compared YOLOv8 vs custom pipeline on speed/accuracy/efficiency trade offs </li>
+                        <li>Planned deployment on NVIDIA Jetson Orin</li>
+                    </ul>
+
+                    <p class="card-text">
+                        Links:
+                        <a href="https://github.com/ultralytics/ultralytics" target="_blank" rel="noopener noreferrer">Ultralytics YOLO</a>,
+                        <a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer">PyTorch</a>.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-label="More work">
+            <h2 class="section-title">More</h2>
+            <p class="card-text">
+                I also use tools like Git/GitHub, GDB, Docker, Flask, and LTspice across projects and coursework. 
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+          
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+</body>
+</html>

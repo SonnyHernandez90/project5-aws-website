@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonny Hernandez | Qualifications</title>
+
+    <link id="site-style" rel="stylesheet" href="css/style-a.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-brand" href="index.html">Sonny Hernandez</a>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="qualifications.html" aria-current="page">Qualifications</a>
+                <a href="service.html">Service</a>
+                
+            </nav>
+
+            <button id="styleToggle" type="button" class="style-toggle">
+                Toggle Style
+            </button>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="hero" aria-label="Resume">
+            <h1 class="hero-title">Qualifications</h1>
+            <p class="hero-subtitle">
+                My technical background, skills, and areas of interest.
+            </p>
+
+            
+            <div style="max-width: 1000px; margin: 22px auto 0;">
+                <object
+                    data="assets/resume.pdf"
+                    type="application/pdf"
+                    width="100%"
+                    height="950"
+                    style="border: none; border-radius: 12px;"
+                >
+                    <p style="margin-top: 10px;">
+                        
+                        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            Click here to open the PDF.
+                        </a>
+                    </p>
+                </object>
+            </div>
+
+           
+            <p class="hero-subtitle" style="margin-top: 16px;">
+                
+                <a
+                    href="https://drive.google.com/file/d/1671MWFMPBnvvnSYtesnCemAFWsCo3ol9/view?usp=share_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Open Resume in Google Drive
+                </a>
+            </p>
+        </section>
+
+        <section aria-label="Technical skills">
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3 class="card-title">Programming Languages</h3>
+                    <p class="card-text">
+                        Experience developing software in C/C++, Python, and JavaScript.
+                        I focus on readable code, consistent structure, and debugging discipline.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Embedded & Hardware</h3>
+                    <p class="card-text">
+                        Built ESP32 systems using ESP IDF + FreeRTOS, worked with Raspberry Pi,
+                        GPIO/I2C peripherals, OLED displays, and power optimization for battery devices.
+                    </p> 
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Software & ML Tools</h3>
+                    <p class="card-text">
+                        Built computer vision pipelines using TensorFlow and OpenCV.
+                        Comfortable with Git/GitHub, Flask, Linux tooling, and structured testing.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-label="Technical interests">
+            <h2 class="section-title">Technical Interests</h2>
+
+            <article class="card">
+                <h3 class="card-title">Embedded Systems</h3>
+                <p class="card-text">
+                    I like building systems that interact with hardware because it forces practical thinking:
+                    reliability, constraints, and real world failure modes.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3 class="card-title">Computer Vision & Machine Learning</h3>
+                <p class="card-text">
+                    I'm especially interested in vision systems that work outside the lab where lighting,
+                    backgrounds, and deployment constraints matter.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3 class="card-title">Systems & Reliability</h3>
+                <p class="card-text">
+                    Debugging lowlevel issues is one of my favorite parts of engineering understanding what
+                    the system is doing, reproducing problems, and building robust fixes.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+          
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

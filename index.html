@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonny Hernandez | Home</title>
+
+
+    <link id="site-style" rel="stylesheet" href="css/style-a.css">
+
+
+ 
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-brand" href="index.html">Sonny Hernandez</a>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="qualifications.html">Qualifications</a>
+                <a href="service.html">Service</a>
+                
+            </nav>
+
+            <button id="styleToggle" type="button" class="style-toggle">
+                Toggle Style
+            </button>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="hero" aria-label="Introduction">
+            <img
+                class="headshot"
+                src="assets/pp.jpg"
+                alt="Portrait of Sonny Hernandez"
+            >
+
+            <h1 class="hero-title">Hi, I'm Sonny Hernandez.</h1>
+
+            <p class="hero-subtitle">
+                I'm a Computer Engineering student at Texas A&amp;M University with a strong
+                interest in embedded systems, computer vision, and software development.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button primary" href="portfolio.html">View My Work</a>
+                <a
+                        class="button"
+                        href="assets/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                         Resume &amp; Skills
+                    </a>
+                    
+                
+                
+            </div>
+
+            <p class="hero-subtitle">
+                Connect with me on
+                <a
+    href="https://www.linkedin.com/in/sonny-hernandez-14623a249"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    LinkedIn
+</a>,
+                or learn more about
+                <a href="https://engineering.tamu.edu/" target="_blank" rel="noopener noreferrer">
+                    Texas A&amp;M Engineering
+                </a>.
+            </p>
+        </section>
+
+        <section class="highlights" aria-label="Highlights">
+            <h2 class="section-title">What I Work On</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3 class="card-title">Embedded Systems</h3>
+                    <p class="card-text">
+                        Building hardware-driven systems using microcontrollers,
+                        sensors, and low-level software.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Computer Vision</h3>
+                    <p class="card-text">
+                        Training and evaluating machine learning models for object
+                        detection in complex real-world environments.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Professional Development</h3>
+                    <p class="card-text">
+                        Writing clean, readable code and using Git based workflows
+                        to iterate and improve projects.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+      
+    </footer>
+
+    <script>
+         const yearEl = document.getElementById("year");
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+    </script>
+</body>
+</html>
